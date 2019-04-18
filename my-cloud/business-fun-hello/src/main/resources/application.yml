@@ -1,0 +1,22 @@
+# eureka客户端配置
+eureka:
+  client:
+    # 单节点一个url,集群用逗号连接
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+# 端口及应用名
+server:
+  port: 8010
+spring:
+  application:
+    name: business-fun-hello
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://47.100.121.212:3306/antifake?characterEncoding=utf8&allowMultiQueries=true
+      driver-class-name: com.mysql.jdbc.Driver
+      username: app
+      password: yT5r#0411#eW2
+
+
+

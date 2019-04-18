@@ -1,0 +1,19 @@
+# 端口及应用名
+server:
+  port: 8080
+spring:
+  application:
+    name: system-gateway-zuul
+
+# eureka客户端配置
+eureka:
+  client:
+    # 单节点一个url,集群用逗号连接
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+zuul:
+  routes:
+    business-hello:
+      path: /hello/**
+      # spring.application.name
+      serviceId: business-fun-hello

@@ -1,0 +1,14 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: system-eurake-server
+eureka:
+  instance:
+    hostname: localhost
+  # 单节点不注册 ，集群向其他eureka节点注册
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
