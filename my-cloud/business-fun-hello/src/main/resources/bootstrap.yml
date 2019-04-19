@@ -1,0 +1,7 @@
+# 端口及应用名
+server:
+  port: 8010
+spring:
+  application:
+    name: business-fun-hello
+
